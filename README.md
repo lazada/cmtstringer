@@ -1,5 +1,8 @@
 # cmtstringer - Comment to String
 
+[![Build Status](https://travis-ci.org/lazada/cmtstringer.svg?branch=master)](https://travis-ci.org/lazada/cmtstringer)
+[![GoDoc](https://godoc.org/github.com/lazada/cmtstringer?status.svg)](https://godoc.org/github.com/lazada/cmtstringer)
+
 `cmtstringer` is a tool that help to generate method `func (t T) String() string`, which satisfy the fmt.Stringer interface, for given type name of a constant. Returned value is the comment text of the constant.
 
 ## Install
