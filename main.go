@@ -80,8 +80,8 @@ const (
 // DO NOT EDIT IT.
 
 // String returns comment of const type {{.TypeName}}
-func ({{.Reciever}} {{.TypeName}}) String() string {
-	switch {{.Reciever}} {
+func ({{.Receiver}} {{.TypeName}}) String() string {
+	switch {{.Receiver}} {
 	{{range .Consts}}case {{.Name}}:
 		return {{printf "%q" .Msg}}
 	{{end}}default:
@@ -158,12 +158,12 @@ func parseDir(dir string) {
 		tmplData := struct {
 			PackageName string
 			TypeName    string
-			Reciever    string
+			Receiver    string
 			Consts      []constValue
 		}{
 			PackageName: pkgName,
 			TypeName:    *typeName,
-			Reciever:    strings.ToLower(string((*typeName)[0])),
+			Receiver:    strings.ToLower(string((*typeName)[0])),
 			Consts:      values,
 		}
 
