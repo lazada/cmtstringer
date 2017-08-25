@@ -1,3 +1,4 @@
+// Package http is used for testing purpose only
 package http
 
 //go:generate cmtstringer -type StatusCode
